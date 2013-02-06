@@ -1,6 +1,9 @@
 opengl-demo
 ===========
 
-OpenGL(ES) demo
+OpenGL demo (GL/GLX)
 
-    based on http://ogltutor.netau.net/index.html (RU)
+based on: http://ogldev.atspace.co.uk/ (ENG)
+          http://ogltutor.netau.net/index.html (RU)
+
+GitHub: https://github.com/triplepointfive/ogldev
