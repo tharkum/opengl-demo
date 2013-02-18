@@ -60,12 +60,13 @@ int main (int argc, char* argv[])
 
     createVertexBufferObject(&context);
 
-    GraphicsTimer timer(500, render_cb, &context);
-
-    deleteVertexBufferObject(&context);
+    GraphicsTimer* timer = new GraphicsTimer(500, render_cb, &context);
 
     getchar();   // press a key to stop
 
-    return 0;
+    delete timer;
 
+    deleteVertexBufferObject(&context);
+
+    return 0;
 }
