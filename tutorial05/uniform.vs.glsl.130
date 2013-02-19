@@ -1,0 +1,9 @@
+#version 130
+
+attribute vec3 Vertex;
+uniform float gScale;
+
+void main()
+{
+    gl_Position = vec4(gScale * Vertex.x, gScale * Vertex.y, Vertex.z, 1.0);
+}
