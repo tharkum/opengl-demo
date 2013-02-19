@@ -1,0 +1,9 @@
+#version 330
+
+in vec3 Vertex;
+uniform mat4 gWorld;
+
+void main()
+{
+    gl_Position = gWorld * vec4(Vertex, 1.0);
+}
