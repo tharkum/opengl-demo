@@ -1,0 +1,8 @@
+#version 330
+
+in vec3 Vertex;
+
+void main()
+{
+    gl_Position = vec4(0.5 * Vertex.x, 0.5 * Vertex.y, Vertex.z, 1.0);
+}
