@@ -1,0 +1,11 @@
+#version 330
+
+in vec3 Vertex;
+uniform mat4 gWorld;
+out vec4 Color;
+
+void main()
+{
+    gl_Position = gWorld * vec4(Vertex, 1.0);
+    Color = vec4(clamp(Vertex, 0.0, 1.0), 1.0);
+}
